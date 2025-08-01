@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を水平方向の中央 */
+  margin: 70px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.newplan {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.newplan input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.newplan button.add {
+  padding: 10px 20px;
+  background-color: #87ceeb;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.plan-area {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li label {
+  flex-grow: 1;
+  font-size: 1.1em;
+  color: #333;
+}
+
+li button.delite {
+  padding: 5px 10px;
+  background-color: #ffc0cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
