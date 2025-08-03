@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平方向の中央揃え */
+}
+
+.input-area {
+  margin: 70px auto;
+  height: 30px;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-grow: 1; /* 入力フィールドが利用可能なスペースを埋める */
+  max-width: 300px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+#addbutton {
+  background-color: #87ceeb;
+  color: #333;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #a9a9a9;
+  cursor: pointer;
+}
+
+.plan-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  width: 400px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+#planlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* 親要素(plan-area)に合わせる */
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+}
+
+.list-row input[type="checkbox"] {
+  transform: scale(1.2); /* チェックボックスを少し大きくする */
+  margin-right: 5px;
+}
+
+.todo-item {
+  margin: 6px;
+  flex-grow: 1;
+}
