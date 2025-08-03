@@ -8,27 +8,13 @@
     <title>ToDo</title>
   </head>
   <body>
-    <div class="container">
-      <div class="newplan">
-        <input type="text" class="plan" name="plan" value="" />
-        <button onclick="SubmitEvent()" class="add">追加</button>
-      </div>
-      <div class="plan-area">
-        <ul>
-          <li>
-            <input type="checkbox" />
-            <label for="scales">aaa</label>
-            <button onclick="SubmitEvent()" class="delite">削除</button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <input type="checkbox" />
-            <label for="scales">www</label>
-            <button onclick="SubmitEvent()" class="delite">削除</button>
-          </li>
-        </ul>
-      </div>
+    <div class="input-area">
+      <input type="text" id="addtext" placeholder="ToDoを入力" />
+      <button id="addbutton">追加</button>
     </div>
+    <div class="plan-area">
+      <ul id="planlist"></ul>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
